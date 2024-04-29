@@ -1,0 +1,289 @@
+5<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.flaticon.com/free-icons/lounge">
+    <style>
+        *{
+            margin-top: 20px;
+            padding: 0;
+        }
+        .image,img{
+            width:100%;
+            height: 900px;
+            position: relative;
+        }
+        .heading{
+            position: absolute;
+            width:750px;
+            height:500px;
+            top:250px;
+            left:370px;
+        }
+        .heading h1{
+            font-size: 60px;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 2px 2px 3px black;
+        }
+        .image:hover h1{
+              transition: all 2s;
+              transform: translateZ(10px)scale(1.3);
+        }
+        .heading h3{
+            text-align: center;
+             color:rgb(140, 249, 253);
+             margin-left: 100px;
+             text-shadow: 2px 2px 3px black;
+        }
+        .content{
+            width:100%;
+            height:350px;
+            /* border: 2px solid black; */
+            background-color:#3e4a59;
+        }
+        .content .contentinner{
+            width:800px;
+            height:200px;
+            /* border: 2px solid black; */
+            margin:70px 250px;
+            text-align: center;
+            font-size: 21px;
+            padding-top:50px;
+            text-align: left;
+            color: white;
+            float: left;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .contentinner p:hover{
+            color: yellow;
+            transition: all 2s;
+            transform: translateZ(100px)scale(1.2);
+        }
+        input{
+            font-size: large;
+            padding: 15px;
+            background-color:gray;
+            border: none;
+            color:white ; 
+            margin-top: 150px;
+            margin-left: -130px;
+        }
+        .bigdiv{
+            margin-top: 100px;
+            width:100%;
+            height:550px;
+            /* background-color: aqua;  */
+            position: absolute;
+            /* border: 2px solid black; */
+        }
+        .about{
+            width:500px;
+            height:600px;
+            /* border: 2px solid black; */
+            position: relative;
+             margin-left: 200px;
+             margin-top: -100px; 
+        }
+            .about1{
+            width:500px;
+            height:400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            margin-left: 800px;
+            /* top: 0; */
+            margin-top:-600px;
+            
+        }
+        #div{
+            width:7px;
+            height:90px;
+            background-color: #3e4a59;
+            margin-top: 100px;
+        }
+        #p{
+            margin-left: 15px;
+            margin-top: -60px;
+            font-size: x-large;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: none;
+        }
+        #para{
+            font-size: 20px;
+            margin: 30px;
+        }
+        .details{
+            width:100%;
+            height:300px;
+            margin-top: 600px;
+            opacity: 1;
+            background-size: 100%;
+            /* border: 2px solid black; */
+        }
+        .d{
+            width: 1400px;
+            height: 200px;
+            /* border: 2px solid black; */
+            position: absolute;
+            margin-top: -280px;
+            margin-left: 40px;
+        }
+        .d1{
+            width: 200px;
+            height:200px;
+            /* border: 2px solid black; */
+            float: left;
+            margin:20px 70px;
+        }
+        #p1{
+            font-size: 50px;
+            color: white;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .descrip{
+            width:1400px;
+            height:300px;
+            background-color: #3e4a59;
+            margin-top: 760px;
+            padding-top: 100px;
+            padding-left: 100px;
+        }
+        .descr{
+            width:1300px;
+            height:250px;
+            /* border: 2px solid black; */
+            position: relative;
+        
+        }
+        .icon{
+            width:250px;
+            height:250px;
+            /* border: 2px solid black; */
+            float: left;
+            margin-left: 120px;
+            text-align: center;
+            justify-content: center;
+        }
+        .fa{
+            font-size: 120px;
+            color: white;
+        }
+        .fa:hover{
+            color: red;
+            text-shadow: 2px 2px 3px black;
+            transition: all 2s;
+            transform: translateZ(100px)scale(1.5);
+        }
+        .icon p{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+        }
+        #div1{
+            width:70px;
+            height:8px;
+            background-color:dodgerblue;
+            margin-top: -10px;
+            margin-left: 90px;
+        }
+        .imagee,#img1{
+            width:200px;
+            height:222px;
+            /* border:2px solid black; */
+            float: left;
+            margin-top: 20px;
+            padding-right: 30px;
+        }
+        input:hover{
+            background-color: mediumslateblue;
+            color: black;
+        }
+        .about1:hover #img{
+            transition: all 2s;
+            transform: translateZ(80px)scale(1.5);
+        }
+        .d1 p{
+            text-shadow: 2px 2px 3px black;
+        }
+        .d1 p:hover{
+            text-decoration: underline ;
+            text-shadow: 2px 2px 3px red;
+            transition: all 2s;
+            transform: translateZ(100px)scale(1.2);
+         
+        }
+        .about:hover{
+            font-style: italic;
+        }
+        .imagee #img1:hover{
+            transition: all 2s;
+            transform: r
+        }
+        .d1 p:hover{
+            transition: all 2s;
+            transform: translateZ(50px)scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="image"><img src="./img8.jpeg" alt="img"><div class="heading"><h1>Comparing The Domestic Flight Experience On Delta And American</h1><br><br>
+    <h3>MAY 11, 2018 BY TIFFANY
+    </h3></div></div>
+    <div class="content"><div class="contentinner"><p>In the interest of full disclosure, One Mile At A Time earns a referral bonus for anyone that’s approved through some of the below links. These are the best publicly available offers that we have found for each card. Please check out our advertiser policy for further details about the partners we work with. Thanks for your support!</p></div><input type="submit" value="CHECK OUT"></div>
+
+<div class="bigdiv">
+    <div class="about"><div id="div"></div><p id="p" style="margin-top:-70px ;">&nbsp;About Us<h1 style="font-size: 40px;">&nbsp;&nbsp;<p style="margin-top: -70px;margin-left: 15px;">Onboard amenities</p></h1></p>
+<p id="para">If you’re flying first class on Delta, you’ll board to find a small bottle of water, a packaged blanket, and a pillow at your seat. Even on a regional jet.</p><p id="para">Unless you’re flying a premium transcon route, American doesn’t stock pillows, but each seat will have a blanket.</p><p id="para">Both airlines advertise pre-departure beverages, but American flight attendants don’t like to serve them. My Delta crews have been great about offering drinks during boarding, and will generally take “once we’re in the air” orders ahead of time as well.
+</p>
+<a href="project1.html"><input style="margin-top: -10px; margin-left: 20px;" type="submit" value="READ MORE"></a></div>
+
+
+
+<div class="about1" ><img style="width: 300px;height: 320px;margin-left: 50px;" id="img" src="./img9.jpeg" alt="img"></div>
+</div>
+<div class="details"><img style="width
+:100%;height: 300px;position: relative;opacity:0.7;" src="./img11.jpeg" alt="img"><div class="d"><div class="d1"><p id="p1">250<br>Aircraft</p></div><div class="d1"><p id="p1">630<br>Employees</p></div><div class="d1"><p id="p1">40<br>Winning</p></div><div class="d1"><p id="p1">2.5m<br>Passengers</p></div></div></div>
+
+
+
+
+<div class="bigdiv">
+    <div class="about"><div id="div"></div><p id="p" style="margin-top: -70px;">&nbsp;SkyClub Seattle<h1 style="font-size: 40px;">&nbsp;&nbsp;<p style="margin-top: -70px;margin-left: 15px;">Overhead bin space</p></h1></p>
+<p id="para">Unless you’re traveling with small children or otherwise need extra time, it seems the only reason folks board right away is to secure bin space.</p><p id="para">Delta proactively and aggressively blocks first class bins for first class passengers. Some American flight attendants will take it upon themselves to do the same, but it’s definitely not consistent.
+</p><p id="para">I’ve also found that Delta agents are much more insistent during the pre-boarding announcements that unneeded carry-on bags should be checked. Like, multiple announcements, even on flights that aren’t full.</p>
+<a href="project1.html"><input style="margin-top: 30px;" type="submit" value="READ MORE"></a></div>
+
+
+
+<div class="about1" ><img style="width: 300px;height: 300px;margin-top: 30px;margin-left: 30px;" id="img" src="./img12.jpeg" alt="img"></div>
+</div>
+
+<div class="descrip"><div class="descr">
+<div class="icon"><i class="fa fa-mobile"></i>
+<p>Mobile apps</p><div id="div1"></div></div>
+<div class="icon"><i class="fa fa-wifi"></i>
+    <p>Connections</p><div id="div1"></div></div>
+<div class="icon"><i class="fa fa-credit-card"></i>
+    <p>Outlets</p><div id="div1"></div></div>
+</div></div> 
+
+
+<div class="bigdiv">
+    <div class="about1" style="margin-top: -150px; width:700px"><div id="div"></div><p id="p" style="margin-top: -70px;">&nbsp;SkyClub Detroit<h1 style="font-size: 40px;">&nbsp;&nbsp;<p style="margin-top: -70px;margin-left: 15px;">Lounges</p></h1></p><p id="para">American’s Flagship lounges and dining are vastly better than anything Delta has to offer, but most people, most of the time, are just going to be using the standard SkyClubs and Admirals Clubs.</p><p id="para">The caliber of the lounges varies dramatically with both airlines. Some, like the Seattle SkyClub, are either newly constructed or recently refurbished, with bright spaces and updated furniture.
+</p>
+<a href="project1.html"><input style="margin-left: 20px;margin-top: -30px;" type="submit" value="READ MORE"></a><br><br>
+
+<div class="imagee"><img id="img1" src="./img13.jpeg" alt="img"></div><div class="imagee">
+    <img id="img1" src="./img15.jpeg" alt="img"></div></div>
+
+
+
+<div class="about" style="height: 675px;" ><img style="width: 500px;height: 675px;margin-top: 50px;" id="img" src="./img14.jpeg" alt="img"></div>
+</div>
+</body>
+</html>
